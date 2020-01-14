@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English Game</title>
+
+    <Style>span.blank {
+        display: inline-block;
+        border-bottom: 1px solid black;
+        min-width: 40px;
+        text-align: center;
+      }</Style>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <p>You will <span class="blank"></span> know <span class="blank"></span> I <span class="blank"></span> you.</p>
+    
+
+    <button class="control">never</button>
+    <button class="control">know</button>
+    <button class="control">love</button>
+    <p>test </p>
+    
+
+    <script>
+        $(document).ready(function() {
+            $(".control").click(function() {
+                let $this = $(this);
+                let val = $this.text();
+                $this.prop("disabled",true);
+                $(".blank:empty:first").html(val);
+            });
+        });
+    </script>
+</body>
+</html>
