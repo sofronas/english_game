@@ -1,43 +1,131 @@
+<!-- English Game -->
+<!-- Designer: Sofronas Konstantinos Sotirios -->
+<!-- Email: sofronas.konstantinos@gmail.com -->
+
 <!DOCTYPE html>
 <html lang="el">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>English Game</title>
+<head>	
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="NM9H7588IvZIBbtJzJ2g-60DeATuiAHzgrl-ZXVI3ZI" />
 
-    <Style>span.blank {
-        display: inline-block;
-        border-bottom: 1px solid black;
-        min-width: 40px;
-        text-align: center;
-      }</Style>
+	<title>English Game</title>
 
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
 
+	<!-- Css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="css/sofron.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/body_area.css">
+	<link rel="stylesheet" type="text/css" href="css/footer_style.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar_style.css">
+	
+	<!-- FontAwesome -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css' />    
+
+	<!-- Custom Inside Css -->
+	<style type="text/css">
+		
+	</style>
+
+	<!-- JavaScript -->
+	<!-- <script src="js/time.js"></script> -->
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <p>You will <span class="blank"></span> know <span class="blank"></span> I <span class="blank"></span> you.</p>
-    
+	<div class="container">
+		<!-- Image and Info Container -->
+		<div class="container">
+			<div class="row" style="opacity: 0;">1<br></div>
 
-    <button class="control">never</button>
-    <button class="control">know</button>
-    <button class="control">love</button>
-    <p>test </p>
-    
+			<!-- Image And Text Infomartion -->
+			<div class="row">
+				<div class="col-12 col-md-8">
+					<img src="images/favicon.png" alt="Logo">
+				</div>
+				<div class="col-12 col-md-4 whiteboard">
+					<p><font size="14"><b>English Game</b></font></p>
+	                <h1>Επικοινωνία</h1>
+	                <p>E-mail: <a href="mailto:sofronas.konstantinos@gmail.com">sofronas.konstantinos@gmail.com</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<br>
 
-    <script>
-        $(document).ready(function() {
-            $(".control").click(function() {
-                let $this = $(this);
-                let val = $this.text();
-                $this.prop("disabled",true);
-                $(".blank:empty:first").html(val);
-            });
-        });
-    </script>
+		<!-- Icons List -->
+		<div class="container">
+			<div class="container">
+				<div class="col">
+					<div class="gameCard">
+						<div class="imgBox">
+							<img src="images/game1Image.jpg">
+							<button class="PlayGame1Box" id="PlayGame1">Play</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		
+		<!-- Social Media -->
+		<div class="container">
+			<div class="container">
+                <a class="socialLink" target="_blank" href="http://youtube.com/"><img alt="Youtube" src="images/Youtube-icon.png" /></a>
+                <a class="socialLink" target="_blank" href="http://twitch.tv/"><img alt="Twitch" src="images/Twitch-icon.png" /></a>
+                <a class="socialLink" target="_blank" href="http://www.facebook.com/"><img alt="Facebook" src="images/Facebook-icon.png" /></a>
+                <a class="socialLink" target="_blank" href="http://twitter.com/"><img alt="Twitter" src="images/Twitter-icon.png" /></a>
+                <a class="socialLink" target="_blank" href="https://plus.google.com/" rel="publisher"><img alt="Google+" src="images/Google-plus-icon.png" /></a>
+                <a class="socialLink" target="_blank" href="https://instagram.com/"><img alt="Instagram" src="images/Instagram-icon.png" /></a>
+            </div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container">
+			<hr>
+			<div class="container">
+				<footer>
+					<p>	Copyright © 
+			            <script type="text/javascript">
+			            	var yearS = 2020;
+			                var year = new Date();
+
+			                //2019 - 2020
+			                if (year.getFullYear() !== yearS) {
+			                	document.write(yearS);
+			                	document.write(" - ");
+			                	document.write(year.getFullYear());
+			                	document.write(" | ")
+			                } else {
+			                	document.write(yearS);
+			                	document.write(" - ")
+			                }
+			            </script>  
+			           	Designed by 
+	            		<a rel="nofollow" href="https://sofronas.github.io/" target="_blank">Sofronas Konstantinos Sotirios</a>
+	        		</p>
+				</footer>
+			</div>
+			<hr>
+		</div>
+
+	</div>
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jQuery_easing.js"></script>
+	<script src="js/hover_effect.js"></script>
+	<script src="js/jsPlay.js"></script>
+	
 </body>
 </html>
